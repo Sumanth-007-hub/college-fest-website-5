@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Fest 2026</title>
+  <style>
+    :root { --navy:#11133b; --purple:#7148ff; --pink:#ff4fa3; --cyan:#48d9e8; --yellow:#ffe66d; --paper:#f7f7ff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--navy); background:var(--paper); }
+    header { padding:20px 7%; display:flex; align-items:center; justify-content:space-between; gap:20px; background:#fff; }
+    .brand { font-weight:900; letter-spacing:.04em; }
+    nav { display:flex; flex-wrap:wrap; gap:22px; }
+    nav a { color:var(--navy); text-decoration:none; font-weight:700; font-size:.95rem; }
+    .hero { padding:76px 7% 80px; color:white; background:radial-gradient(circle at 80% 15%,#a24bff 0,transparent 28%),linear-gradient(125deg,#171344,#3922a8 58%,#6a39d4); position:relative; overflow:hidden; }
+    .eyebrow { display:inline-block; background:var(--yellow); color:var(--navy); padding:8px 13px; border-radius:30px; font-size:.82rem; font-weight:900; letter-spacing:.08em; }
+    h1 { max-width:850px; font-size:clamp(3rem,8vw,6.7rem); line-height:.94; letter-spacing:-.065em; margin:25px 0 20px; }
+    h1 span { color:var(--yellow); }
+    .hero p { max-width:590px; font-size:1.15rem; line-height:1.7; color:#efedff; }
+    .actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:28px; }
+    .btn { display:inline-block; border:0; border-radius:999px; padding:14px 21px; font-weight:850; text-decoration:none; cursor:pointer; font-size:1rem; }
+    .primary { background:var(--yellow); color:var(--navy); }
+    .secondary { border:1px solid #ffffff80; color:#fff; background:transparent; }
+    .hero-note { margin-top:42px; display:flex; gap:12px; flex-wrap:wrap; }
+    .pill { padding:10px 14px; border:1px solid #ffffff55; border-radius:14px; background:#ffffff12; font-weight:700; }
+    section { padding:65px 7%; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:20px; margin-bottom:27px; }
+    h2 { margin:0; font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-.045em; }
+    .section-head p { max-width:420px; line-height:1.6; color:#5d5c7c; margin:0; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .card { background:#fff; border:1px solid #e8e7f7; border-radius:22px; padding:25px; box-shadow:0 12px 35px #1b15550a; }
+    .emoji { width:52px; height:52px; display:grid; place-items:center; font-size:1.7rem; border-radius:16px; background:#f0eaff; margin-bottom:20px; }
+    .card:nth-child(2) .emoji { background:#ffe7f2; }
+    .card:nth-child(3) .emoji { background:#ddfbff; }
+    .card h3 { font-size:1.25rem; margin:0 0 9px; }
+    .card p { color:#666580; line-height:1.65; margin:0; }
+    .schedule { background:#eeedff; }
+    .schedule-list { max-width:800px; margin-top:25px; }
+    .slot { display:grid; grid-template-columns:130px 1fr; gap:20px; padding:19px 0; border-bottom:1px solid #d5d3f3; }
+    .time { color:#6942e8; font-weight:900; }
+    .slot h3 { margin:0 0 5px; }
+    .slot p { margin:0; color:#666580; line-height:1.5; }
+    .register { background:var(--navy); color:white; }
+    .register .section-head p { color:#d2d0f0; }
+    .form-wrap { display:grid; grid-template-columns:1fr 1fr; gap:35px; align-items:start; }
+    form { background:#fff; color:var(--navy); padding:25px; border-radius:22px; }
+    label { display:block; font-weight:750; margin:0 0 7px; }
+    input, select { width:100%; padding:13px 14px; margin-bottom:17px; border:1px solid #deddf0; border-radius:11px; font:inherit; }
+    .form-note { font-size:.9rem; line-height:1.65; color:#d2d0f0; }
+    .notice { display:none; margin-top:14px; padding:12px; border-radius:10px; background:#e0ffef; color:#135e3a; font-weight:700; }
+    footer { padding:25px 7%; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; background:#0b0c2a; color:#c9c8e8; font-size:.9rem; }
+    @media (max-width:760px) { header { align-items:flex-start; flex-direction:column; } .cards,.form-wrap { grid-template-columns:1fr; } .section-head { align-items:flex-start; flex-direction:column; } .slot { grid-template-columns:95px 1fr; } .hero { padding-top:55px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">✦ CAMPUS / FEST</div>
+    <nav aria-label="Main navigation">
+      <a href="#events">Events</a><a href="#schedule">Schedule</a><a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">THE CAMPUS COMES ALIVE</span>
+      <h1>COLLEGE FEST<br><span>2026</span></h1>
+      <p>One campus. Endless energy. Join us for a celebration of music, dance, games, creativity, and unforgettable memories.</p>
+      <div class="actions">
+        <a class="btn primary" href="#register">Register your interest ↗</a>
+        <a class="btn secondary" href="#events">Explore events</a>
+      </div>
+      <div class="hero-note">
+        <div class="pill">📅 Date: To be announced</div>
+        <div class="pill">📍 Venue: College campus</div>
+        <div class="pill">🎟️ Open to students</div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="section-head">
+        <h2>Find your vibe.</h2>
+        <p>From the main stage to friendly competitions, there is something for everyone.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="emoji">🎤</div><h3>Music & Live Acts</h3><p>Bring the energy, cheer for your favourites, and enjoy live performances.</p></article>
+        <article class="card"><div class="emoji">💃</div><h3>Dance Showcase</h3><p>Celebrate movement and expression with solo and group performances.</p></article>
+        <article class="card"><div class="emoji">🎮</div><h3>Games & Challenges</h3><p>Team up with friends and take on fun challenges across campus.</p></article>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <div class="section-head">
+        <h2>Plan your day.</h2>
+        <p>This is a sample schedule for the project demo. Final timings can be updated when the event is confirmed.</p>
+      </div>
+      <div class="schedule-list">
+        <div class="slot"><div class="time">09:00 AM</div><div><h3>Welcome & Opening</h3><p>Kick off the day and meet the fest team.</p></div></div>
+        <div class="slot"><div class="time">11:00 AM</div><div><h3>Campus Activities</h3><p>Games, creative events, and student showcases.</p></div></div>
+        <div class="slot"><div class="time">02:00 PM</div><div><h3>Stage Performances</h3><p>Music and dance performances from student groups.</p></div></div>
+        <div class="slot"><div class="time">04:30 PM</div><div><h3>Finale</h3><p>Closing celebration and thank-you to participants.</p></div></div>
+      </div>
+    </section>
+
+    <section id="register" class="register">
+      <div class="section-head">
+        <h2>Be part of it.</h2>
+        <p>Use this demo form to preview the registration experience.</p>
+      </div>
+      <div class="form-wrap">
+        <div>
+          <h3>Ready to join the fun?</h3>
+          <p class="form-note">Enter your details and choose an event interest. This standalone demo shows a confirmation message in the browser; it does not save submissions or send email. Connect it to your Google Form or a backend to collect real registrations.</p>
+        </div>
+        <form id="registration-form">
+          <label for="name">Full name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <label for="event">Event preference</label>
+          <select id="event" name="event" required>
+            <option value="">Choose an event</option>
+            <option>Music</option><option>Dance</option><option>Games</option><option>Cultural Events</option>
+          </select>
+          <button class="btn primary" type="submit">Submit demo registration</button>
+          <div class="notice" id="notice" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 College Fest · Student project demo</span><span>Made for campus, with campus spirit ✦</span></footer>
+  <script>
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const preference = document.getElementById('event').value;
+      const notice = document.getElementById('notice');
+      notice.textContent = `Thanks, ${name}! Your demo interest in ${preference} has been recorded on this page.`;
+      notice.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
